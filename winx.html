@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Winx</title>
+    <style>
+        /* Define a cor de fundo lilás para a página toda */
+        body {
+            background-color: #d8a0d8; 
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Estilo da faixa roxa (Cabeçalho e Rodapé) */
+        .faixa-roxa {
+            background-color: #800080; 
+            padding: 20px; 
+            text-align: center; 
+            color: white; 
+            border: 8px solid #d8a0d8; /* Moldura interna */
+        }
+
+        /* Estilo para deixar o conteúdo central mais legível sobre o lilás */
+        main {
+            padding: 20px;
+        }
+
+        table {
+            background-color: white; /* Fundo branco na tabela para destacar as fotos */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Cabeçalho com a cor da imagem -->
+    <div class="faixa-roxa">
+        <h1>Fã Clube das Winx</h1>
+        <p>Tudo sobre as fadinhas!</p>
+    </div>
+
+    <main>
+        <table style="width: 100%;" border="1">
+            <tbody>
+                <tr style="height: 21px; background-color: #eee;">
+                    <td>&nbsp;Nome</td>
+                    <td>&nbsp;Elemento</td>
+                    <td style="text-align: center;">&nbsp;Foto</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;Bloom</td>
+                    <td>&nbsp;Fogo</td>
+                    <td style="text-align: center;"><img src="https://i.pinimg.com/736x/a1/ac/95/a1ac954cfafe4381f9efba9ac4d47085.jpg" width="100" height="100"></td>
+                </tr>
+                <tr>
+                    <td>&nbsp;Stella</td>
+                    <td>&nbsp;Sol e Luz</td>
+                    <td style="text-align: center;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjt-TapDKdx_8gHueSnDFI9LqMY6GbQSf0KA&s" width="100" height="100"></td>
+                </tr>
+                <tr>
+                    <td>&nbsp;Flora</td>
+                    <td>&nbsp;Natureza</td>
+                    <td style="text-align: center;"><img src="https://i.pinimg.com/736x/f6/4a/45/f64a458cefa2cc9dfdd0697eaa910efa.jpg" width="100" height="100"></td>
+                </tr>
+                <tr>
+                    <td>&nbsp;Musa</td>
+                    <td>&nbsp;Música</td>
+                    <td style="text-align: center;"><img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/10ef4de0-a5d1-4a1a-9e97-c5c89a66c56c/dhl47y8-1c58b06d-cc3c-4120-88ae-3f815cad13ea.png" width="100" height="100"></td>
+                </tr>
+                <tr>
+                    <td>&nbsp;Layla</td>
+                    <td>&nbsp;Águas</td>
+                    <td style="text-align: center;"><img src="https://static.wikia.nocookie.net/winx/images/b/b1/Layla_Charmix.png/revision/latest/scale-to-width-down/250?cb=20130507194520&path-prefix=pt" width="100" height="100"></td>
+                </tr>
+                <tr>
+                    <td>&nbsp;Tecna</td>
+                    <td>&nbsp;Tecnologia</td>
+                    <td style="text-align: center;"><img src="https://static.wikia.nocookie.net/clubdaswinx/images/a/a7/Tecna.png/revision/latest?cb=20150907165706&path-prefix=pt-br" width="100" height="100"></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Transformações das Winxs:</h2>
+        <ul>
+            <li>Enchantix</li>
+            <li>Sirenix</li>
+            <li>Believix</li>
+            <li>Charmix</li>
+            <li>Cosmic</li>
+            <li>Mythix</li> 
+            <li>Tynix</li>
+        </ul>
+
+        <h3>Inimigos das Winx:</h3>
+        <ol>
+            <li>Valtor</li>
+            <li>Icy</li>
+            <li>Darcy</li>
+            <li>Stormy</li>
+        </ol>
+
+        <h2>Wiki</h2>
+        <p>Acesse a <a href="https://winx.fandom.com/pt/wiki/Winx">Wiki</a></p>
+
+        <h2>Formulário para entrar no fã clube</h2>
+        <form>
+            <label for="firstname">Primeiro nome:</label><br>
+            <input type="text" id="firstname" name="firstname"><br><br>
+            
+            <label for="email">E-mail:</label><br>
+            <input type="email" id="email" name="email"><br><br>
+            
+            <label for="message">Mensagem:</label><br>
+            <textarea id="message" rows="4" cols="30"></textarea><br><br>
+            
+            <p>Trix ou Winxs?</p>
+            <input type="radio" name="time" value="Trix"> Trix
+            <input type="radio" name="time" value="Winxs"> Winxs
+
+            <p>Quais especialistas você gosta?</p>
+            <input type="checkbox"> Sky
+            <input type="checkbox"> Brandon
+            <input type="checkbox"> Riven
+            <input type="checkbox"> Timmy
+            <input type="checkbox"> Hélia
+            <input type="checkbox"> Nabu
+            <br><br>
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+
+    <!-- Rodapé com a cor da imagem -->
+    <div class="faixa-roxa" style="font-size: 14px; padding: 15px;">
+        © 2026 - Gustavo Camerino de Carvalho
+    </div>
+
+</body>
+</html>
