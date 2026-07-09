@@ -1,0 +1,99 @@
+<!--
+  Pokédex interativa: consome a PokéAPI para listar, buscar,
+  filtrar por tipo e exibir detalhes dos 151 primeiros Pokémons.
+  Estrutura em pokedex.html, estilo em pokedex.css e lógica em pokedex.js.
+
+  @author Gustavo Camerino
+-->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pokédex</title>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Nunito:wght@400;600;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="pokedex.css">
+</head>
+<body>
+
+<!-- BANNER -->
+<header class="banner">
+  <div class="banner-inner">
+    <svg class="pokeball-icon" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="50" cy="50" r="48" fill="white" stroke="black" stroke-width="3"/>
+      <path d="M2 50 Q2 2 50 2 Q98 2 98 50" fill="#e3350d"/>
+      <rect x="2" y="47" width="96" height="6" fill="black"/>
+      <circle cx="50" cy="50" r="14" fill="black"/>
+      <circle cx="50" cy="50" r="10" fill="white"/>
+      <circle cx="50" cy="50" r="6" fill="white" stroke="black" stroke-width="2"/>
+    </svg>
+    <div class="banner-text">
+      <h1>POKÉDEX</h1>
+      <p>Explore todos os Pokémons da região!</p>
+    </div>
+    <div class="banner-dots">
+      <div class="banner-dot"></div>
+      <div class="banner-dot"></div>
+      <div class="banner-dot"></div>
+    </div>
+  </div>
+</header>
+
+<!-- CONTROLS -->
+<div class="controls">
+  <div class="search-group">
+    <input class="search-input" id="searchInput" type="text" placeholder="Nome ou ID... ex: pikachu, 25">
+    <button class="btn-search" id="searchBtn">🔍 Buscar</button>
+  </div>
+  <select class="filter-select" id="typeFilter">
+    <option value="">Todos os Tipos</option>
+    <option value="normal">Normal</option>
+    <option value="fire">Fogo 🔥</option>
+    <option value="water">Água 💧</option>
+    <option value="grass">Planta 🌿</option>
+    <option value="electric">Elétrico ⚡</option>
+    <option value="ice">Gelo ❄️</option>
+    <option value="fighting">Lutador 🥊</option>
+    <option value="poison">Veneno ☠️</option>
+    <option value="ground">Terra 🌍</option>
+    <option value="flying">Voador 🦅</option>
+    <option value="psychic">Psíquico 🔮</option>
+    <option value="bug">Inseto 🐛</option>
+    <option value="rock">Pedra 🪨</option>
+    <option value="ghost">Fantasma 👻</option>
+    <option value="dragon">Dragão 🐉</option>
+    <option value="dark">Sombrio 🌑</option>
+    <option value="steel">Aço ⚙️</option>
+    <option value="fairy">Fada 🧚</option>
+  </select>
+  <div class="results-info" id="resultsInfo">Carregando...</div>
+</div>
+
+<!-- GRID -->
+<div class="grid-container">
+  <div class="pokemon-grid" id="pokeGrid">
+    <div class="loading">
+      <svg class="pokeball-loading" viewBox="0 0 100 100" fill="none">
+        <circle cx="50" cy="50" r="48" fill="white" stroke="#333" stroke-width="3"/>
+        <path d="M2 50 Q2 2 50 2 Q98 2 98 50" fill="#e3350d"/>
+        <rect x="2" y="47" width="96" height="6" fill="#333"/>
+        <circle cx="50" cy="50" r="14" fill="#333"/>
+        <circle cx="50" cy="50" r="10" fill="white"/>
+        <circle cx="50" cy="50" r="6" fill="white" stroke="#333" stroke-width="2"/>
+      </svg>
+      <p>Carregando Pokémons...</p>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL -->
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal" id="modal">
+    <button class="modal-close" id="modalClose">✕</button>
+    <div id="modalContent"></div>
+  </div>
+</div>
+
+<script src="pokedex.js"></script>
+</body>
+</html>

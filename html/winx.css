@@ -1,0 +1,34 @@
+/**
+ * Estilos do site "Fã Clube das Winx".
+ * Compartilhado entre site.html e site-winx.html.
+ *
+ * @author Gustavo Camerino
+ */
+
+body {
+  background-color: #cf9bcc;
+}
+
+header {
+  background-color: #b072ac;
+  color: white;
+  padding: 50px;
+  text-align: center;
+  margin: 0;
+}
+
+footer {
+  background-color: #800080;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.winx-table {
+  border: 1px solid black;
+  width: 100%;
+}
+
+.center {
+  text-align: center;
+}

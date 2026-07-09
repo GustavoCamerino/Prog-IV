@@ -1,0 +1,230 @@
+/**
+ * Estilos do site fã-clube Hello Kitty & miguinhos.
+ *
+ * @author Gustavo Camerino
+ */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  background-color: #fdd1e7;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* ===================== */
+/* NAVBAR                */
+/* ===================== */
+.navbar {
+  background: linear-gradient(135deg, #ff6eb4, #ff9dd1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0.8rem 2rem;
+  color: white;
+  gap: 0.5rem;
+}
+
+.navbar h1 {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 1.2rem;
+}
+
+.navbar ul a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: opacity 0.2s;
+}
+
+.navbar ul a:hover {
+  opacity: 0.75;
+}
+
+/* ===================== */
+/* HERO                  */
+/* ===================== */
+.hero {
+  background: linear-gradient(135deg, #ff6eb4 0%, #ffb6d9 50%, #fce4f0 100%);
+  text-align: center;
+  padding: 3rem 1rem;
+  color: white;
+  text-shadow: 0 1px 3px rgba(255, 100, 160, 0.4);
+}
+
+.hero h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+/* ===================== */
+/* MAIN                  */
+/* ===================== */
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 30px 40px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+/* ===================== */
+/* SEÇÕES                */
+/* ===================== */
+.sobre,
+.personagens,
+.galeria,
+.entrar {
+  background-color: #fdfdfd;
+  border: 2px solid pink;
+  border-radius: 16px;
+  padding: 2rem;
+  width: 100%;
+}
+
+.sobre h2,
+.personagens h2,
+.galeria h2,
+.entrar h2 {
+  margin-bottom: 1rem;
+  color: black;
+  font-weight: 700;
+}
+
+.sobre p {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* ===================== */
+/* PERSONAGENS (GRID)    */
+/* ===================== */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(7, 130px);
+  gap: 10px;
+  justify-content: center;
+}
+
+.card {
+  background-color: #ffb6c1;
+  border-radius: 16px;
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  background: linear-gradient(135deg, #ff6eb4 0%, #ffb6d9 50%, #fce4f0 100%);
+
+}
+
+.card strong {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-size: 0.95rem;
+}
+
+.card p {
+  font-size: 0.82rem;
+  color: #5a2a3a;
+}
+
+/* ===================== */
+/* GALERIA (GRID)        */
+/* ===================== */
+.cards-galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 1rem;
+}
+
+.card-galeria {
+  background-color: #ffb6c1; /* fundo rosa igual aos cards de personagens */
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-galeria:hover {
+  transform: translateY(-6px);
+}
+
+.card-galeria img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ===================== */
+/* FORMULÁRIO            */
+/* ===================== */
+.entrar form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin-top: 0.5rem;
+}
+
+.entrar input,
+.entrar textarea {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: 1px solid #f9a8c9;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  font-family: inherit;
+  outline: none;
+  background: #fff;
+}
+
+.entrar input:focus,
+.entrar textarea:focus {
+  border-color: #ff6eb4;
+  box-shadow: 0 0 0 2px #ffd6ec;
+}
+
+.entrar textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+.entrar button {
+  background-color: #ff6eb4;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 0.9rem;
+  font-size: 1rem;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.entrar button:hover {
+  background-color: #ff4da6;
+}

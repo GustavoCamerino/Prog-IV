@@ -1,0 +1,48 @@
+<!--
+  Jogo "Mask Yami - Caça às Máscaras".
+  Estrutura em index.html, estilo em estilo.css e lógica em script.js.
+
+  @author Gustavo Camerino
+-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mask Yami - Caça às Máscaras</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+  <div id="jogo">
+
+    <h1>🎭 Mask Yami - Caça às Máscaras</h1>
+
+    <div id="painel">
+      <div>Pontuação: <span id="pontos">0</span></div>
+      <div>Tempo: <span id="tempo">15</span>s</div>
+      <div>Acertos: <span id="acertos">0</span></div>
+    </div>
+
+    <div id="area">
+
+      <div id="tela-inicio">
+        <h2 style="color:#e94560; font-size:24px;">Bem-vindo!</h2>
+        <p>Clique nas máscaras antes que elas desapareçam.<br>Você tem 15 segundos. Boa sorte!</p>
+        <button onclick="iniciarJogo()">Iniciar Jogo</button>
+      </div>
+
+      <div id="tela-fim">
+        <h2>Fim de Jogo!</h2>
+        <div id="resultado">0 pontos</div>
+        <p id="mensagem-fim"></p>
+        <button onclick="iniciarJogo()">Jogar Novamente</button>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

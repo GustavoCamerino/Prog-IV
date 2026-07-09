@@ -1,0 +1,66 @@
+<!--
+  Site fã-clube Hello Kitty & miguinhos.
+  Estrutura, estilo e dados dos personagens ficam em arquivos
+  separados (style.css, dados-personagens.js, script.js).
+
+  @author Gustavo Camerino
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Hello Kitty & miguinhos</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <nav class="navbar">
+            <h1>🎀 Hello Kitty & miguinhos 🎀</h1>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#personagens">Personagens</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#entrar">Entrar</a></li>
+            </ul>
+        </nav>
+
+        <header class="hero">
+            <h2>Um mundo cheio de fofura e amizade 💖</h2>
+        </header>
+
+        <main>
+
+            <section class="sobre" id="sobre">
+                <h2>Sobre</h2>
+                <p>O universo Hello Kitty é cheio de amizade, carinho e aventuras fofinhas. Cada personagem tem sua própria personalidade encantadora!</p>
+            </section>
+
+            <section class="personagens" id="personagens">
+                <h2>Personagens</h2>
+                <div class="cards" id="cards-personagens">
+                    <!-- Cards renderizados dinamicamente por script.js -->
+                </div>
+            </section>
+
+            <section class="galeria" id="galeria">
+                <h2>Galeria</h2>
+                <div class="cards-galeria" id="cards-galeria">
+                    <!-- Cards renderizados dinamicamente por script.js -->
+                </div>
+            </section>
+
+            <section class="entrar" id="entrar">
+                <h2>Entrar no Fã-clube</h2>
+                <form>
+                    <input type="text" placeholder="Seu nome">
+                    <input type="email" placeholder="Seu email">
+                    <textarea placeholder="Mensagem fofinha 💌"></textarea>
+                    <button type="submit">Enviar 🎀</button>
+                </form>
+            </section>
+
+        </main>
+
+        <script src="dados-personagens.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
